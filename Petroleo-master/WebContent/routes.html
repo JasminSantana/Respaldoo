@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Routes Example</title>
+<link href="http://code.google.com/apis/maps/documentation/javascript/examples/default.css" 
+rel="stylesheet" type="text/css" />
+<script type="text/javascript"
+src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+<script type="text/javascript"
+src="js/routes.js"></script>
+</head>
+<body onload="initialize()"> 
+<div>
+<strong>Start:</strong>
+<select id="start" onchange="calcRoute();">
+	<option value="Salamanca, Guanajuato, Mexico">Salamanca</option>
+	<option value="Mexico City, Distrito Federal, Mexico">Mexico City</option>
+	<option value="Veracruz, Veracruz-Llave, Mexico">Veracruz</option>
+	<option value="Monterrey, Nuevo Leon, Mexico">Monterrey</option>
+	<option value="Tampico, Tamps., Mexico">Tampico</option>
+	<option value="Tabasco, Mexico">Tabasco</option>
+	<option value="Poza Rica de Hidalgo, Ver., Mexico">Poza Rica de Hidalgo</option>
+	<option value="Tamaulipas, Mexico">Tamaulipas</option>
+	
+	
+</select> 
+<strong>End:</strong>
+<select id="end" onchange="calcRoute();">
+	<option value="Salamanca, Guanajuato, Mexico">Salamanca</option>
+	<option value="Mexico City, Distrito Federal, Mexico">Mexico City</option>
+	<option value="Veracruz, Veracruz-Llave, Mexico">Veracruz</option>
+	<option value="Monterrey, Nuevo Leon, Mexico">Monterrey</option>
+	<option value="Tampico, Tamps., Mexico">Tampico</option>
+	<option value="Tabasco, Mexico">Tabasco</option>
+	<option value="Poza Rica de Hidalgo, Ver., Mexico">Poza Rica de Hidalgo</option>
+	<option value="Tamaulipas, Mexico">Tamaulipas</option>
+</select>
+</div>
+<h3 >Distance: <strong id="distance">0</strong> Km. <br/>
+ Meses  <strong id="meses">0</strong> <br/>
+ Robot <strong id="robot">0</strong> <br/>
+ Total Distancia <strong id="totaldis">0</strong> <br/>
+ Total Robots <strong id="totalrt">0</strong> </h3>
+ 
+<div id="map-canvas"></div>
+</body>
+</html>
